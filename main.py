@@ -19,3 +19,6 @@ else:
     print("No profit, no loss")
 
 print("\nRecord saved successfully.")
+# Save record to file
+with open("records.txt", "a") as file:  # "a" = append
+    file.write(f"Sales: {sales}, Expenses: {expenses}, Profit: {profit}\n")
