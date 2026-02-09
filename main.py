@@ -20,9 +20,11 @@ else:
 
 print("\nRecord saved successfully.")
 
+# MONTHLY SUMMARY
 total_sales = 0
 total_expenses = 0
 total_profit = 0
+
 with open("records.txt", "r") as file:
     for line in file:
         parts = line.split(",")
